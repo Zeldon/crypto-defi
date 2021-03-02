@@ -3,6 +3,7 @@ import json
 import logging
 import sys
 import asyncio
+from datetime import date, datetime
 
 from telethon import TelegramClient
 from telethon.errors import SessionPasswordNeededError
@@ -16,7 +17,7 @@ from telethon.tl.types import (
 from telethon.tl.functions.messages import (GetHistoryRequest)
 
 
-logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+logging.getLogger().addHandler(logging.StreamHandler())
 
 # some functions to parse json date
 class DateTimeEncoder(json.JSONEncoder):
