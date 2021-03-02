@@ -4,6 +4,8 @@ __pycache__/
 
 # config file
 config.ini
+channel_messages.json
+zeldon.session
 
 # C extensions
 *.so
